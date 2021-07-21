@@ -3,10 +3,9 @@
         @csrf
         <textarea
             name="body"
-            class="w-full"
+            class="w-full focus:outline-none"
             placeholder="What's up doc?"
             required
-            autofocus
         ></textarea>
 
         <hr class="my-4">

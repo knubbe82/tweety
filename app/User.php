@@ -35,9 +35,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['password'] = bcrypt($value);
+    }
+
     public function getAvatarAttribute($value)
     {
-        return asset($value);
+        return asset($value ?: '/images/default-avatar.jpeg');
     }
 
     public function timeline()

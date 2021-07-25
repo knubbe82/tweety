@@ -14,4 +14,10 @@
 			Profile
 		</a>
 	</li>
+    <li>
+        <form action="/logout" method="POST">
+            @csrf
+            <button class="font-bold text-lg">Logout</button>
+        </form>
+    </li>
 </ul>

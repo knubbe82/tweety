@@ -15,7 +15,7 @@
 
                         <input class="border border-gray-400 p-2 w-full"
                                type="text"
-                               name="username"
+                               name="email"
                                id="email"
                                autocomplete="email"
                                value="{{ old('email') }}"
